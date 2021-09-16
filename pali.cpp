@@ -19,7 +19,7 @@ int main(){
   //determines length of initial
   int len = strlen(inital);
   
-  for(i=0; i < len ;i++){
+  for(int i=0; i < len ;i++){
     if(inital[i] != inital[len-1-i]){
        cout << "not palindrome" << endl;
        return 0;
