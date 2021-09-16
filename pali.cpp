@@ -36,7 +36,7 @@ int main(){
       }
   } 
     
-  int num = len - remove
+  int num = len - remove;
   cout << num << endl;
   input[num] = '\0';
   cout << input << endl;
