@@ -22,6 +22,12 @@ int main(){
   int count2 = 0;
   char input[100];
 	
+  if(len > 80){
+    cout << "There are more than 80 characters. Please run the program to try again" << endl;
+    return 0;
+  }  
+	
+	
   for(int c =0; c < len; c++){
     if(isalpha(inital[c])){
       input[count2] = tolower(inital[c]);
