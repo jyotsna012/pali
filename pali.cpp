@@ -18,15 +18,29 @@ int main(){
 	
   //determines length of initial
   int len = strlen(inital);
-  
-  for(int i=0; i < len ;i++){
-    if(inital[i] != inital[len-1-i]){
+  int count2 = 0;
+  char input[100];
+	
+  for(int c =0; c < len; c++){
+    if(isalpha(inital[c])){
+      input[count2] = tolower(inital[c]);
+      count2++;
+      }
+     if(isdigit(inital[c])){
+	input[count2] = inital[c];
+      	count2++;
+      }
+  } 
+  int len2 = strlen(input);
+
+  for(int i=0; i < len2 ;i++){
+    if(input[i] != input[len2-1-i]){
        cout << "not palindrome" << endl;
        return 0;
    }
-   
-	  
+   	  
+}
    cout << "palindrome" << endl; 
-	  
+
 }
-}
+
