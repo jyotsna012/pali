@@ -15,6 +15,7 @@ int main(){
   //gives user space to type and store that input into inital upto 100 char
   cin.get(inital, 100);
   cin.get();
+  int remove = 0;
 	
   //determines length of initial
   int len = strlen(inital);
@@ -30,13 +31,17 @@ int main(){
 	input[count2] = inital[c];
       	count2++;
       }
+      else{
+      	remove++;
+      }
   } 
-  int len2 = strlen(input);
-  cout << len2 << endl;
-  input[len2] = '\0';
+    
+  int num = len - remove
+  cout << num << endl;
+  input[num] = '\0';
   cout << input << endl;
 
-  for(int i=0; i < len2 ;i++){
+  for(int i=0; i < num ;i++){
     if(input[i] != input[len2-1-i]){
        cout << "not palindrome" << endl;
        return 0;
