@@ -27,13 +27,14 @@ int main(){
       input[count2] = tolower(inital[c]);
       count2++;
       }
-     if(isdigit(inital[c])){
+      else if(isdigit(inital[c])){
 	input[count2] = inital[c];
       	count2++;
       }
-      else{
-      	remove++;
+      else {
+        remove++;
       }
+      
   } 
     
   int num = len - remove;
