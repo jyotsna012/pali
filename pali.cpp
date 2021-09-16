@@ -42,7 +42,7 @@ int main(){
   cout << input << endl;
 
   for(int i=0; i < num ;i++){
-    if(input[i] != input[len2-1-i]){
+    if(input[i] != input[num-1-i]){
        cout << "not palindrome" << endl;
        return 0;
    }
