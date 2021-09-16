@@ -32,6 +32,7 @@ int main(){
       }
   } 
   int len2 = strlen(input);
+  cout << input << endl;
 
   for(int i=0; i < len2 ;i++){
     if(input[i] != input[len2-1-i]){
