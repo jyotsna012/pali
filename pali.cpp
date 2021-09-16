@@ -37,10 +37,12 @@ int main(){
   } 
     
   int num = len - remove;
-  cout << num << endl;
+  cout << len << " len" << endl;
+  cout << remove << " remove" << endl;
+  cout << num << " len - remove" << endl;
   input[num] = '\0';
   cout << input << endl;
-
+   
   for(int i=0; i < num ;i++){
     if(input[i] != input[num-1-i]){
        cout << "not palindrome" << endl;
