@@ -32,6 +32,7 @@ int main(){
       }
   } 
   int len2 = strlen(input);
+  input[len2] = '\0';
   cout << input << endl;
 
   for(int i=0; i < len2 ;i++){
